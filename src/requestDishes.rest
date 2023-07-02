@@ -1,0 +1,25 @@
+GET http://localhost:5000/dishes/64a1660deaa490525229f759
+###
+GET http://localhost:5000/dishes
+
+###
+POST http://localhost:5000/dishes
+Content-Type: application/json
+
+{
+    "name": "potato",
+    "price": 10,
+    "restaurant":"64a1418c7902442983c03ae7"
+}
+
+###
+DELETE http://localhost:5000/dishes/
+
+
+###
+PUT http://localhost:5000/dishes/64a1660deaa490525229f759
+Content-Type: application/json
+
+{
+    "price":15
+}

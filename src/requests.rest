@@ -1,0 +1,22 @@
+GET http://localhost:5000/restaurants/
+###
+POST http://localhost:5000/restaurants
+Content-Type: application/json
+
+{
+    "name":"some Bar",
+    "rating": 5
+}
+
+
+###
+PUT  http://localhost:5000/restaurants/64a152a7a6ef421a353a7c13
+Content-Type: application/json
+
+{
+    "rating": 3
+}
+
+###
+DELETE  http://localhost:5000/restaurants/64a1529ea6ef421a353a7c10
+
